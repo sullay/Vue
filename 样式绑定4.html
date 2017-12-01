@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="https://unpkg.com/vue"></script>
+		<style type="text/css">
+			.active{
+				width:100px;
+				height: 100px;
+				background: green;
+			}
+			.text-danger{
+				background: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<div v-bind:class="['active','text-danger']">
+				
+			</div>
+		</div>
+		<script type="text/javascript">
+			var app=new Vue({
+				el:"#app",
+				data:{
+				
+				}
+			});
+		</script>
+	</body>
+</html>

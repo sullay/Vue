@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="https://unpkg.com/vue"></script>
+		<style type="text/css">
+			.text-danger{
+				background: red;
+			}
+			.active{
+				width:100px;
+				height: 100px;
+				background: green;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="app">
+			<div v-bind:style="[xxx,yyy]">
+				xxxxxxxxxxx
+			</div>
+		</div>
+		<script type="text/javascript">
+			var app=new Vue({
+				el:"#app",
+				data:{
+					xxx:{
+						color:"green",
+						fontSize:'30px'
+					},
+					yyy:{
+						background:"red"
+					}
+				}
+			});
+		</script>
+	</body>
+</html>
