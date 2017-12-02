@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="app">
+			<ul>
+				<template v-for="site in sites">
+					<li>{{site.name}}</li>
+					<li>----------------</li>
+				</template>
+			</ul>
+		</div>
+		<script type="text/javascript">
+			var app=new Vue({
+				el:"#app",
+				data:{
+					sites:[
+						{name:'aaa'},
+						{name:'bbb'},
+						{name:'ccc'}
+					]
+				}
+			})
+		</script>
+	</body>
+</html>
