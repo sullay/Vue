@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="app">
+			<div>
+				<input v-model="parentMsg" />
+				<br />
+				<xxx :message="parentMsg"></xxx>
+			</div>
+		</div>
+		<script type="text/javascript">
+			Vue.component('xxx',{
+				props:['message'],
+				template:'<span>{{message}}</span>'
+			});
+			new Vue({
+				el:'#app',
+				data:{
+					parentMsg:'父组件内容'
+				}
+			});
+		</script>
+	</body>
+</html>

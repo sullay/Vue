@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="app">
+			<ol>
+				<todo-item todo=[333,222,211]></todo-item>
+			</ol>
+		</div>
+		<script type="text/javascript">
+			Vue.component('todo-item',{
+				props:{
+					todo:{
+						type:String,
+						default:100
+					}
+				},
+				template:'<li>{{todo}}</li>'
+			});
+			new Vue({
+				el:'#app'
+			});
+		</script>
+	</body>
+</html>

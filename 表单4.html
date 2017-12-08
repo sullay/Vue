@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title></title>
+		<script src="https://unpkg.com/vue"></script>
+	</head>
+	<body>
+		<div id="app">
+		<input type="radio" id="xxx" value="xxx" v-model="picked"/>
+		<label for="xxx">xxx</label>
+		<br />
+		<input type="radio" id="yyy" value="yyy" v-model="picked" />
+		<label for="yyy">yyy</label>
+		<br />
+		<span>选中值为:{{picked}}</span>
+		</div>
+		<script type="text/javascript">
+			var app=new Vue({
+				el:"#app",
+				data:{
+					picked:"xxx"
+				}
+			});
+		</script>
+	</body>
+</html>
