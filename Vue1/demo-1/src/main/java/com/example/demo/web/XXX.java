@@ -7,6 +7,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 public class XXX {
 	@RequestMapping("/")
 	public String index() {
-		return "index.html";
+		return "/index.html";
 	}
 }
